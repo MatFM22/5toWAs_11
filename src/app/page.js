@@ -1,9 +1,13 @@
-import Image from "next/image";
+import UserCard from '../../components/Usercard';
 
 export default function Home() {
   return (
-    <main className="p-4">
-      <h1 className="text-2x1 font-bold">Mi perfil</h1>
+    <main className="min-h-screen bg-gray-100 p-6 flex justify-center items-center">
+      <UserCard 
+        name= "Matias Aquino"
+        email= "matias.aquino@tecsup.edu.pe"
+        image= "https://randomuser.me/api/portraits/men/3.jpg"
+      />
     </main>
   );
 }
